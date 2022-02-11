@@ -1,0 +1,63 @@
+body{
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    flex-wrap: wrap;
+}
+
+#board{
+    /* border:1px solid black; */
+    width:450px;
+    height:450px;
+    display:grid;
+    grid-template-rows: repeat(9,1fr);
+    grid-template-columns: repeat(9,1fr);
+    box-sizing: border-box;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.child{
+    border:1px solid black;
+    width:50px;
+    height:50px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 50;
+    cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* input sudoko  */
+.inputSudoko{
+    /* background-color: rgb(206, 193, 193); */
+    font-weight: 700;
+    font-size: 2rem;
+}
+/* wrongclass */
+.danger{
+    background: red !important;
+}
+
+
+/* button styling */
+button{
+    background: rgb(132, 214, 8);
+    margin-top:10px;
+    width:200px;
+    height:50px;
+    font-size: 2rem;
+    font-weight: 100;
+    border-radius: 23px;
+    border:2px solid  black;
+    cursor: pointer;
+}
